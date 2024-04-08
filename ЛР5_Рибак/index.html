@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>5 лаба</title>
+        <link rel="stylesheet" type="text/css" href="jstyle.css">
+
+    </head>
+   
+  
+    <body >
+    	<div id="dialog" title="Ваш тур:" visibility:hidden>
+  <p>
+  	ПІБ:<b><span id="n1"></span><br>
+  	Країна виліту:<b><span id="k1"></span><br>
+  	Країна прибуття:<b><span id="k2"></span><br>
+  	Дата виліту:<b><span id="dat1"></span><br>
+  	Дата виліту:<b><span id="dat2"></span><br>
+    Кількість днів:<b><span id="countD"></span><br>
+  	Ціна:<b><span id="c1"></span><br>
+  	
+  </p>
+</div> 
+ 
+
+   <header id="header">
+      
+      	<h2><p id="blink2">К Р А Щ И Й____С А Й Т____Ф О Р М У В А Н Н Я____Т У Р І В</p></h2>
+      
+    </header>
+    
+<main  >
+
+    	<div id="yy">
+    		<div class="div2">
+    		<h1><p id = "p1"> Туристичне агенство</p></h1>
+    		<h2><p id="p2">Тури ваших мрій за вашими цінами ;) </p></h2>
+    		</div>	
+    		 <p id="p4">
+    		 	<input id="name1"type="text" name="name1" placeholder="ПІБ" size="18"class="i"/><br><br>
+    		 	<input id="place1"type="text" name="place1" placeholder="Звідки" size="18"class="i"/><br><br>
+            <input id="place2"type="text" name="place2" placeholder="Куди" size="18" class="i" /><br><br>
+           
+            <input id="datepicker"type="date" name="date1" placeholder="Виліт" size="18" class="i" /><br><br>
+           
+            <input id="datepicker1" type="date" name="date2" placeholder="Прибуття" size="18" class="i" /><br><br>
+            <input id="countDay"type="number" name="countDay" placeholder="Кількість днів" size="18"class="i"/><br><br>
+            <input id="cina"type="text" name="cina" placeholder="Введіть бажану ціну" size="18"class="i"/><br><br>
+            
+            
+               
+            </p>
+               <p id="p6">
+                <button id="opener"  type= "submit" value="Кнопка"style="width:190px;height: 55px;background-color:#e1e86d">кнопочка
+               </button>
+           </p><br><br>
+           
+    	</div>
+</main>
+    	</div>
+    	
+    	<script src="jjs/jquery-3.5.1.min.js" ></script>
+    	<script src="jjs/jq.js"></script>
+    	<link rel="stylesheet" type="text/css" href="jquery-ui.css">
+    	<script src="jquery-ui.js"></script>
+    	
+    	<script>
+    		$( function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+
+ 
+    $( "#opener" ).on( "click", function() {
+      $( "#dialog" ).dialog( "open" );
+        $("#n1").text($('#name1').val());
+      $("#k1").text($('#place1').val());
+      $("#k2").text($('#place2').val());
+      $("#dat1").text($('#datepicker').val());
+      $("#dat2").text($('#datepicker1').val());
+      $("#countD").text($('#countDay').val());
+        $("#c1").text($('#cina').val());
+    });
+  } );
+    	</script>
+        <style type="text/css">
+            .q{
+                border: 2px solid red;
+                padding:  10px;
+                background-color: #222;
+                color: blue;
+            }
+            .qq{
+                border: 2px solid blue;
+                background-color:rgb(230, 238, 15);
+            }
+        </style>
+    </body>
+    </html>

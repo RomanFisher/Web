@@ -1,0 +1,96 @@
+/*css*/
+#p1
+{
+ color:rgb(252, 231, 0);
+ text-align:center;
+ word-spacing: 15px;
+ padding-top: 200px;
+}
+#p6
+{
+    text-align: center;
+}
+#p2
+{
+ color:rgb(252, 231, 0);
+ text-align:center;
+ word-spacing: 15px;
+ padding: 1px;
+}
+#p4
+{text-align:center;
+ padding-top: 380px;
+}
+#p5
+{text-align:center;
+ padding-top: 60px;
+ 
+}
+#p3
+{
+	text-indent: 55px;
+    word-spacing: 55px;
+    text-align: left;
+    padding-top: 20px;
+    color:white;
+}
+.i{
+	height: 50px;
+}
+#yy
+{
+    min-height: 100vh;
+    width: 100%;
+    background: url('img/slide1.jpg') no-repeat;
+   background-size: 100% 100%;
+                
+}
+ #header{
+ display: flex;
+ height: 30px; 
+    color: #9b16b3;
+    justify-content: center;
+}
+#content{
+    width:170;
+    height: 1050px;
+}
+#blink2
+{
+    justify-content: center;
+    -webkit-animation:-blink2 3s linear infinite;
+    animation: blink2 3s linear infinite;
+    }
+    @-webkit-keyframes blink2 
+    {
+        100% {color: rgba(238, 255, 52, 0);}
+    }
+    @keyframes blink2
+    {
+    100%{color: rgba(255, 13, 13, 0);} 
+    }
+.div1{
+    
+    font-size: 30px;
+    height: 80px;
+}
+    .div2{
+    margin: 10px;
+    font-size: 25px;
+    height: 80px;
+}
+
+body
+{
+    background-color:#64e8dd;
+}
+h3
+{
+    text-align: center;
+}
+
+
+legend{
+    color: #b1abab;
+}
+
